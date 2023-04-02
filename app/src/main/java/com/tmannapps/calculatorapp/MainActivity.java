@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         mySubtract = findViewById(R.id.myButtonSubtract);
 
         //set on click listener addition
-        //suggested from warnings to replace with lambda. Need to review lambda expressions.
+        //suggested from warnings to replace with lambda. Review lambda expressions.
         myAdd.setOnClickListener(view -> {
             try {
                 getDouble();
