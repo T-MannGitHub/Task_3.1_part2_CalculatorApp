@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 // Tiffany Mann SIT708 Task 3.1 Calculator Student ID: 221457972
 //source that assisted my understand the double type manipulation: https://technobyte.org/performing-arithmetic-operations-android-studio/
 
+    //get double value from string variables
     public void getDouble() {
         input1Double = Double.parseDouble(myInputValue1.getText().toString());
         input2Double = Double.parseDouble(myInputValue2.getText().toString());
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         myAdd = findViewById(R.id.myButtonAdd);
         mySubtract = findViewById(R.id.myButtonSubtract);
 
+        //set on click listener addition
         //suggested from warnings to replace with lambda. Need to review lambda expressions.
         myAdd.setOnClickListener(view -> {
             try {
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Please input a number", Toast.LENGTH_SHORT).show();
             }
         });
-
+        //set on click listener subtraction
         mySubtract.setOnClickListener(view -> {
             try {
                 getDouble();
